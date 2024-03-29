@@ -1,0 +1,34 @@
+### Recuperar Producto
+GET http://localhost:3000/products
+
+### Para Crear un Producto
+POST http://localhost:3000/products
+Content-Type: application/json
+
+  {
+    "id":1,
+    "name": "Balon de futbol"
+  }
+
+### Para Actualizar un Producto
+PUT http://localhost:3000/products?id=1
+Content-Type: application/json
+
+  {
+    "id":1,
+    "name": "Balon de futbol",
+  }
+
+### Para Actualizar partde de un Producto
+PATCH http://localhost:3000/products?id=1
+Content-Type: application/json
+
+  {
+    "id":1,
+    "name": "Balon de futbol",
+  }
+
+### Para Eliminar partde de un Producto
+DELETE http://localhost:3000/products?id=1
+
+
