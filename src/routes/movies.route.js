@@ -4,3 +4,4 @@ export const routerMovies = Router()
 
 routerMovies.get('/:id', MoviesController.findById)
 routerMovies.get('/', MoviesController.getAll)
+routerMovies.post('/', MoviesController.createMovie)

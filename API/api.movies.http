@@ -2,15 +2,21 @@
 GET http://localhost:3000/movies
 
 ### Recuperar Movies by Id
-GET http://localhost:3000/movies/30
+GET http://localhost:3000/movies/11
 
 ### Para Crear un Producto
-POST http://localhost:3000/products
+POST http://localhost:3000/movies
 Content-Type: application/json
 
-  {
-    "id":1,
-    "name": "Balon de futbol"
+  { 
+    "sql": "Select * from persona",
+    "title": "Batman Forever",
+    "year": 1975,
+    "director":"Fabio Rojas",
+    "duration":175,
+    "poster": "https://www.example.com/posters/godfather.jpg",
+    "genre":["Drama", "Action"]
+   
   }
 
 ### Para Actualizar un Producto
